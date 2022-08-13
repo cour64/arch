@@ -118,7 +118,7 @@ Enable DRM:
 ```zsh
 sed -i '/^options.*/ s/$/ nvidia-drm.modeset=1/' /boot/loader/entries/arch.conf
 sed -i '/^options.*/ s/$/ nvidia-drm.modeset=1/' /boot/loader/entries/arch-fallback.conf
-sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc
+sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
 ```
 
 Add pacman hook to update initramfs on nvidia upgrade:
