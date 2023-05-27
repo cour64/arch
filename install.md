@@ -1,4 +1,4 @@
-# My Arch install guide
+# Arch install guide
 
 ## Keys and clock
 
